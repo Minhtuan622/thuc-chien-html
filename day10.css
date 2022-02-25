@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+	background: linear-gradient(to right, #ffe000, #799f0c);
+}
+
+.container{
+    width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+form{
+    border-bottom: 1px solid #aaa;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+form button{
+    outline: none;
+    border: none;
+    background: yellowgreen;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 20px;
+    width: 270px;
+}
+
+.todo{
+    list-style: none;
+}
+.todo li{
+    padding: 15px 20px;
+    display: flex;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    align-items: center;
+    cursor: pointer;
+}
+li.done span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+li.done{
+    color: darkgray;
+}
+li.done span{
+    text-decoration: line-through;
+}

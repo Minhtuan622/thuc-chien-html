@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background: #17a2b8;
+	height: 100vh;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.thongbao{
+	font-size: 40px;
+	color: #17a2b8;
+	background: white;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+}
+
+.box .ketqua{
+	height: 250px;
+	width: 250px;
+	border: 5px solid white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	margin: auto;
+	margin-bottom: 60px;
+}
+
+.card{
+	background: white;
+	width: 300px;
+	border-radius: 10px;
+	font-weight: bold;
+	overflow: hidden;
+	margin: 20px;
+}
+.card p{
+	padding: 10px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+.card p:first-child{
+	background: #78c0c9;
+	color: azure;
+}
+
+.hide{
+	display: none;
+}
+
+.thongtin{
+	display: flex;
+}

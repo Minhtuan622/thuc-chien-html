@@ -1,0 +1,94 @@
+:root {
+  --success: #2691d9;
+  --error: #e74c3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #3ca7ee, #9b408f);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  width: 400px;
+}
+
+.information {
+  position: relative;
+  margin-top: 30px;
+}
+.information input {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: none;
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid #adadad;
+}
+.information span {
+  position: absolute;
+  border-bottom: 3px solid var(--success);
+  width: 100%;
+  left: 0;
+  top: 45px;
+  width: 0%;
+  transition: 0.3s;
+}
+.information input:focus ~ span {
+  width: 100%;
+}
+.information.error small {
+  color: var(--error);
+}
+.information.error input {
+  border-bottom: 3px solid var(--error);
+}
+
+button {
+  outline: none;
+  border: none;
+  background: var(--success);
+  padding: 10px;
+  border-radius: 30px;
+  margin: 25px 0 25px 0;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background: #08609a;
+}
+
+a {
+  text-decoration: none;
+  color: var(--success);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  text-align: center;
+}
